@@ -32,7 +32,7 @@ Step-by-step Workaround:
 5. Finally, to make sure that all changes take effect, execute:
 ^
   ~~~ terminal
-  wsl --shutdown on
+  PS C:\> wsl --shutdown on
   ~~~
 ^
   Re-open your WSL terminal and have fun :)
