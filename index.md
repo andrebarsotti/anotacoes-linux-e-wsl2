@@ -1,6 +1,6 @@
-----
+---
 title: Liberar memória WSL2
-----
+---
 
 Step-by-step Workaround:
 
