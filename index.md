@@ -10,26 +10,26 @@ Step-by-step Workaround:
 
   The "*/15" means that it will be executed every 15 minutes. You can change it if you wish
 
-2. Auto start cron service. On your _~/.bashrc_ add the following line:
+1. Auto start cron service. On your _~/.bashrc_ add the following line:
 
   ~~~ terminal
   $ [ -z "$(ps -ef | grep cron | grep -v grep)" ] && sudo /etc/init.d/cron start &> /dev/null
   ~~~
 
-3. Allow starting cron service without asking by root password. On your WSL bash execute $ sudo visudo and add the following line:
+1. Allow starting cron service without asking by root password. On your WSL bash execute $ sudo visudo and add the following line:
 
   ~~~ terminal
   $ %sudo ALL=NOPASSWD: /etc/init.d/cron start
   ~~~
 
-4. (Optional) Hard limit the maximum memory. By default it's limited to 80% of the host memory, if yo	u want to change it create a .wslconfig file on your %UserProfile% with the following content:
+1. (Optional) Hard limit the maximum memory. By default it's limited to 80% of the host memory, if yo	u want to change it create a .wslconfig file on your _%UserProfile%_ with the following content:
 
   ~~~
   [wsl2]
-  memory=6GB
+  memory=8GB
   ~~~
 
-5. Finally, to make sure that all changes take effect, execute:
+1. Finally, to make sure that all changes take effect, execute:
 
   ~~~ terminal
   PS C:\> wsl --shutdown on
