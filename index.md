@@ -9,7 +9,7 @@ Step-by-step Workaround:
   ~~~
 ^
   The "*/15" means that it will be executed every 15 minutes. You can change it if you wish
-2. Auto start cron service. On your ~/.bashrc add the following line:
+2. Auto start cron service. On your _~/.bashrc_ add the following line:
 ^
   ~~~ terminal
   $ [ -z "$(ps -ef | grep cron | grep -v grep)" ] && sudo /etc/init.d/cron start &> /dev/null
