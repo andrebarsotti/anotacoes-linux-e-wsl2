@@ -26,7 +26,7 @@ Step-by-step workaround:
 
 1. Finally, to make sure that all changes take effect, execute:
   ~~~ terminal
-    PS C:\> wsl --shutdown on
+    PS C:\> wsl --shutdown
   ~~~
   Re-open your WSL terminal and have fun :)
 
