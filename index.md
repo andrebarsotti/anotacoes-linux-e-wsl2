@@ -48,7 +48,7 @@ Passo-a-passo para limpeza de cache:
   ~~~
   Um alias para esse comando pode ser adiconado no seu _.bashrc_.
   ~~~ terminal
-  $ echo 'alias last_drop_cache_run="sudo stat -c '%y' /root/drop_caches_last_run"' >> ~./bashrc
+  $ echo 'alias last_drop_cache_run="sudo stat -c '%y' /root/drop_caches_last_run"' >> ~/.bashrc
   $ source ~./bashrc
   ~~~
   
