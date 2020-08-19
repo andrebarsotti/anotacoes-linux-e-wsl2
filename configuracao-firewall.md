@@ -53,7 +53,7 @@ Esses são os passos para configuração de um de um servidor de firewall.
 ## 2. Configuar um arquivo com as regras de IP Tables
 
 1. Criar um arquivo de script:
-  ~~~ shell
+  ~~~ bash
   #!/bin/bash
   REDELOCAL="10.10.10.0/24"
 
