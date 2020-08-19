@@ -11,4 +11,4 @@ organizá-las e também de compartilhar o conhecimento adquirido.
 
 3. [Configurar um novo HD no Linux](./novo-drive-linux)
 
-4. [Configuaração de um servidor de firewall no Ubuntu Server 20.04](./configuracao-firewall)
+<!--4. [Configuaração de um servidor de firewall no Ubuntu Server 20.04](./configuracao-firewall)-->
