@@ -42,7 +42,7 @@ Esses são os passos para configuração de um de um servidor de firewall.
           mode: balance-rr
           mii-monitor-interval: 100
   ~~~
-  ^
+  
   A opção _optional: true_ permite que o sistema faça um boot sem esperar que essas interfaces tenham sido totalmente carregas.
 
 4. Aplicar a configuração com o comando:
