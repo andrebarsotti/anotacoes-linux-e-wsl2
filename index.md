@@ -11,8 +11,14 @@ organizá-las e também de compartilhar o conhecimento adquirido.
 
 3. [Configurar bonding (balanciamento de placas de rede)](./configurar-bonding)
 
-4. [Configuar servidor Samba para compartilhar arquivos](./samba-share)
+4. [Configurando um servidor de DNS](./instalando-dns)
 
-5. [Configurar um novo HD no Linux](./novo-drive-linux)
+5. [Configurando um servidor de DHCP](./instalando-dhcp)
+
+6. [Compartilhar internet e salvar IP Tables](./compartilhar-internet)
+
+7. [Configuar servidor Samba para compartilhar arquivos](./samba-share)
+
+8. [Configurar um novo HD no Linux](./novo-drive-linux)
 
 <!--6. [Configuaração de um servidor de firewall no Ubuntu Server 20.04](./configuracao-firewall)-->
