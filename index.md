@@ -21,4 +21,6 @@ organizá-las e também de compartilhar o conhecimento adquirido.
 
 8. [Configurar um novo HD no Linux](./novo-drive-linux)
 
+9. [Instalação do WSL 2](./instalacao-wsl2)
+
 <!--6. [Configuaração de um servidor de firewall no Ubuntu Server 20.04](./configuracao-firewall)-->
