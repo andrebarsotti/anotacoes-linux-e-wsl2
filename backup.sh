@@ -8,7 +8,7 @@ BACKUP_NAME="link-dados"
 #Montando o nome dos arquivos
 DATESTR=$(date +"%Y-%m-%d")
 
-#Processo do fullbackup
+#Processo do backup incremental com tar.
 echo "$(date +"%H:%M:%S") Iniciando o backup..." > $BACKUP_DESTIN/log-$DATESTR.log
 #echo "$(date +"%H:%M:%S") Apagando arquivos antigos..." >> $BACKUP_DESTIN/log-$DATESTR.log
 #rm -fv $BACKUP_DESTIN/$BACKUP_NAME*.* >>  $BACKUP_DESTIN/log-$DATESTR.log
