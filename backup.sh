@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Parametros
-#BACKUP_SOURCE="/mnt/dados"
-#BACKUP_DESTIN="/mnt/backup"
-#BACKUP_NAME="link-dados"
+BACKUP_SOURCE="/mnt/dados"
+BACKUP_DESTIN="/mnt/backup"
+BACKUP_NAME="link-dados"
 
 #Montando o nome dos arquivos
 DATESTR=$(date +"%Y-%m-%d")
