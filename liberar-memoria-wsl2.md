@@ -6,11 +6,37 @@ Passo-a-passo para limpeza de cache:
   ~~~ terminal
   $ sudo crontab -e -u root
   ~~~
-  e adcione a linha abaixo :
+  e adicione a linha abaixo :
   ~~~
   */15 * * * * sync; echo 3 > /proc/sys/vm/drop_caches; touch /root/drop_caches_last_run
   ~~~
   Esse "\*/15" significa que a execução será a cada 15 minutos. Você pode modificar se desejar.
+
+1. Ative o systemd, se ele não estiver ativado:
+  ~~~ terminal
+  $ sudo vim /etc/wsl.conf
+  ~~~
+  e adicione as linhas abaixo :
+  ~~~ INI
+  [boot]
+  systemd=true
+  ~~~
+
+1. (Opcional) Você pode limitar manualmente o limite de memória do WSL. O valor defuault é limitado à 80% da memória do host, se você desejar mudar crie um arquivo **.wslconfig** no seu **%UserProfile%** com o seguinte conteúdo:
+  ~~~
+  [wsl2]
+  memory=8GB
+  ~~~
+
+1. Finalmente, para garantir que esta tudo ok, execute em um _Powersheel_ com privilégio administrativo:
+  ~~~ terminal
+    PS C:\> wsl --shutdown
+  ~~~
+  Reinicie seu terminal WSL :)
+
+
+
+## Passos antigos
 
 1. Para iniciar automáticamente o cron no WSL, altere seu arquivo **~/.bashrc** adicionando a seguinte linha:
   ~~~
@@ -29,18 +55,6 @@ Passo-a-passo para limpeza de cache:
   ~~~ 
   %sudo ALL=NOPASSWD: /etc/init.d/cron start
   ~~~
-
-1. (Opcional) Você pode limitar manualmente o limite de memória do WSL. O valor defuault é limitado à 80% da memória do host, se você desejar mudar crie um arquivo **.wslconfig** no seu **%UserProfile%** com o seguinte conteúdo:
-  ~~~
-  [wsl2]
-  memory=8GB
-  ~~~
-
-1. Finalmente, para garantir que esta tudo ok, execute em um _Powersheel_ com privilégio administrativo:
-  ~~~ terminal
-    PS C:\> wsl --shutdown
-  ~~~
-  Reinicie seu terminal WSL :)
 
 **OBS:** Você pode veriifcar a execução cron job olhando em /root/drop_caches_last_run pela data de modificação com o comando: 
   ~~~ terminal
